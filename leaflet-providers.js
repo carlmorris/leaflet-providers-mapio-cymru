@@ -76,6 +76,14 @@
 	 */
 
 	L.TileLayer.Provider.providers = {
+		MapioCymru: {
+			url: 'https://openstreetmap.cymru/osm_tiles/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 16,
+				attribution: 'Data ar y map Ⓗ Cyfranwyr <a href=\"http://osm.org\">osm.org</a>',
+				variant: 'web',
+			}
+		},
 		OpenStreetMap: {
 			url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
